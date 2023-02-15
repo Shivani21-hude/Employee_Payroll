@@ -21,3 +21,6 @@ insert into employee_payroll values
 ('jasmin',34567,'2019-09-08'),
 ('sima',9877,'2012-06-05')
 
+--Uc4
+
+select * from employee_payroll
