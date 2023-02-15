@@ -24,3 +24,7 @@ insert into employee_payroll values
 --Uc4
 
 select * from employee_payroll
+
+--Uc5
+select salary from employee_payroll where name ='Shivani'
+select * from employee_payroll where start_date between '2019-02-22' and '2023-04-21'
