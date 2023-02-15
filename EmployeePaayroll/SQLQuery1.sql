@@ -41,6 +41,7 @@ update employee_payroll set gender ='M' where id in (5,6)
 select sum(salary) from employee_payroll where Gender='M'
 select gender, sum(Salary) from employee_payroll where gender='M' group by gender
 select gender,AVG(salary) from employee_payroll group by gender
+select gender,count(name) from employee_payroll group by gender
 select max(salary) "Highest_Salary" from employee_payroll 
 select min(salary) "Minimum_Salary" from employee_payroll 
 
@@ -56,3 +57,6 @@ Deductions money,
 TexablePay money,
 IncomeTax money,
 NetPay money
+
+--Uc10
+insert into employee_payroll values ('sima',2345,'2019-09-30','F',NULL,'India','Mechanical',NULL,NULL,NULL,NULL,NULL)
