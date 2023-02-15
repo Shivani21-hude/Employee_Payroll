@@ -43,3 +43,9 @@ select gender, sum(Salary) from employee_payroll where gender='M' group by gende
 select gender,AVG(salary) from employee_payroll group by gender
 select max(salary) "Highest_Salary" from employee_payroll 
 select min(salary) "Minimum_Salary" from employee_payroll 
+
+--Uc8
+alter table employee_payroll add phonenumber int ,
+address varchar(300) not null default 'India',
+department varchar(50)
+
