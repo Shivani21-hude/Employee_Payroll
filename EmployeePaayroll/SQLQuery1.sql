@@ -36,3 +36,10 @@ alter table employee_payroll add Gender char(1)
 update employee_payroll set Gender ='F' where name='Shivani' or name='sima'
 update employee_payroll set gender ='F' where id in (2,3)
 update employee_payroll set gender ='M' where id in (5,6)
+
+--Uc7
+select sum(salary) from employee_payroll where Gender='M'
+select gender, sum(Salary) from employee_payroll where gender='M' group by gender
+select gender,AVG(salary) from employee_payroll group by gender
+select max(salary) "Highest_Salary" from employee_payroll 
+select min(salary) "Minimum_Salary" from employee_payroll 
