@@ -49,3 +49,10 @@ alter table employee_payroll add phonenumber int ,
 address varchar(300) not null default 'India',
 department varchar(50)
 
+--Uc9
+alter table employee_payroll add 
+Basic_pay money,
+Deductions money,
+TexablePay money,
+IncomeTax money,
+NetPay money
